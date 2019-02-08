@@ -1,4 +1,4 @@
-Description
+# Description
 
 The goal is to implement 2FA on an unix server for Console/SSH access. Unix uses PAM (Pluggable Authentication Modules) for SSH authentication among other things. PAM’s name speaks for itself, it’s comprised of many modules that can be added or removed as necessary. And it is pretty easy to write your own module and add it to SSH /Logon authentication. After PAM is done with the regular password authentication it already does for SSH, we’ll get it to send an http message/email/SMS with a randomly generated code valid only for this authentication.
 You can set up PAM authentication either by using external authentication sources, such as NIS and LDAP, or by using a single, central ObjectServer.
@@ -43,7 +43,7 @@ auth required pam_permit.so
 auth optional pam_cap.so
 
 
-# Standard Un*x authentication.
+# Standard Unix authentication.
 
 @include common-auth
 
